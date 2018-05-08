@@ -1,0 +1,61 @@
+@import "https://fonts.googleapis.com/css?family=Roboto+Mono:400,700";
+body {
+  background: #EEEEEE;
+}
+
+#leaderboard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.Leaderboard {
+  font-family: 'Roboto Mono', monospace;
+  width: 400px;
+  background: #FFFFFF;
+  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.2);
+}
+.Leaderboard .Title {
+  padding: 20px;
+  background: #121212;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+.Leaderboard ul {
+  padding: 20px;
+  text-transform: uppercase;
+}
+.Leaderboard .Person {
+  align-items: center;
+  background-size: cover;
+  display: flex;
+  margin-bottom: 10px;
+}
+.Leaderboard .Person:first-child {
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.Leaderboard .Person:first-child .Image {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+.Leaderboard .Person:last-child {
+  margin-bottom: 0;
+}
+.Leaderboard .Person .Image {
+  height: 44px;
+  width: 44px;
+  background: orange;
+  border-radius: 44px;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+.Leaderboard .Person .Name {
+  margin-left: 2px;
+}
+.Leaderboard .Person .Score {
+  margin-left: auto;
+}
